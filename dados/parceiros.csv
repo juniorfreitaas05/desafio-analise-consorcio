@@ -1,0 +1,13 @@
+id_parceiro,nome_parceiro,tipo_parceiro,uf_parceiro,data_inicio_parceria
+PAR001,Consorcio Direto Digital,digital,SP,2021-03-15
+PAR002,Rede Autos Sul,loja,RS,2019-08-01
+PAR003,Imobiliaria Horizonte,correspondente,MG,2020-01-20
+PAR004,Call Center Prime,telemarketing,SP,2022-05-10
+PAR005,Banco Parceiro Alfa,bancario,SP,2018-11-05
+PAR006,Loja Mais Credito,loja,BA,2021-09-30
+PAR007,Rede Facil Consorcios,digital,SP,2024-02-01
+PAR008,Agencia Norte Negocios,correspondente,PA,2022-07-12
+PAR009,Marketplace ClickBem,digital,SP,2023-04-18
+PAR010,Corretora Vale Verde,correspondente,GO,2020-06-25
+PAR011,Escritorio Nordeste Invest,correspondente,PE,2021-02-08
+PAR012,Venda Direta Interna,interno,SP,2018-01-01
