@@ -60,3 +60,14 @@ print(df_completo['status_cota'].value_counts())
 # 6. Salvar base unificada
 df_completo.to_csv('base_completa_analise.csv', index=False)
 print("\nBase unificada salva em 'base_completa_analise.csv' com sucesso!")
+
+# 7. Resultado enxuto (sem dados pessoais de clientes), mesmas colunas da entrega
+resultado = (df_cotas
+             .merge(df_contemplacoes.rename(columns={'id_grupo': 'id_grupo_y'}), on='id_cota', how='left')
+             .rename(columns={'id_grupo': 'id_grupo_x'}))
+colunas = ['id_cota', 'id_grupo_x', 'id_cliente', 'id_parceiro', 'canal_venda', 'categoria',
+           'valor_credito', 'prazo_meses', 'taxa_adm_pct', 'valor_parcela', 'data_adesao',
+           'status_cota', 'data_cancelamento', 'id_contemplacao', 'id_grupo_y',
+           'data_assembleia', 'tipo_contemplacao', 'valor_lance']
+resultado[colunas].to_csv('resultado_analise.csv', index=False)
+print(f"resultado_analise.csv salvo com {len(resultado)} linhas.")
